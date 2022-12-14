@@ -1,0 +1,9 @@
+<h5>{{ header | uppercase }}</h5>
+<br />
+<br />
+<button (click)="FunctionClick('inputext')">click me</button>
+<br />
+<input #txt (change)="FunctionClick(txt.value)" />
+<br />
+<br />
+<input [(ngModel)]="header" />
